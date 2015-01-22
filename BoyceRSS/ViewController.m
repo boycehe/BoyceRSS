@@ -12,12 +12,16 @@
 
 - (void)viewDidLoad {
     
-    NSView *view = [[NSView alloc]initWithFrame:CGRectMake(10, 10, 10, 10)];
-    view.layer.backgroundColor = [NSColor redColor].CGColor;
-    view.window.backgroundColor = [NSColor redColor];
-    [self.view addSubview:view];
     [super viewDidLoad];
 
+    NSLog(@"frame:%@",NSStringFromRect(self.view.frame));
+
+    NSTextField *textField = [[NSTextField alloc]initWithFrame:NSRectFromCGRect(CGRectMake(10,self.view.frame.size.height - 110, 100, 100))];
+    textField.layer.backgroundColor = [NSColor grayColor].CGColor;
+    textField.placeholderString = @"test";
+    [self.view addSubview:textField];
+
+   
     // Do any additional setup after loading the view.
 }
 
