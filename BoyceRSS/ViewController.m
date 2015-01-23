@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -20,9 +21,9 @@
     textField.layer.backgroundColor = [NSColor grayColor].CGColor;
     textField.placeholderString = @"test";
     [self.view addSubview:textField];
-
-   
-    // Do any additional setup after loading the view.
+    
+  
+    
 }
 
 - (void)setRepresentedObject:(id)representedObject {

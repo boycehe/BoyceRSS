@@ -17,11 +17,25 @@ PODS:
   - AFNetworking/Reachability (2.4.1)
   - AFNetworking/Security (2.4.1)
   - AFNetworking/Serialization (2.4.1)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - GDataXML-HTML (1.2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - BlocksKit (~> 2.2.5)
+  - GDataXML-HTML (~> 1.2.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
+  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
+  GDataXML-HTML: 3aa8f4200dd461d0a95d812397cebd6a2c98953f
 
 COCOAPODS: 0.34.4
